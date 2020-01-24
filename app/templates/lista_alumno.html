@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}  
+<div class="container-fluid">
+
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">USUARIOS REGISTRADOS</h1>
+<p class="mb-4"><a>DEMOSTRACION DE UNA TABLA LLENA DE USUARIOS " AQUI SE PODRA VISUALIZAR TOODS LOS ALUMNOS YA REGISTRADO EN EL SISTEMA  </a>.
+<a> " LOS DATOS QUE APARECEN EN LA INTERFAZ SON SOLO UN DEMO LA ESTRUCTURA ES LO QUE SE ESTA TOMANDO EN CUENTA</a>
+</p>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+  <div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>No. Control</th>
+            <th>Semestre</th>
+            <th>Acciones</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          {% for usu in usuarios %}
+          <tr>
+            
+            <td>{{usu.usuario.first_name}}</td>
+            <td>{{usu.usuario.last_name}}</td>
+            
+            
+            
+          </tr>
+          {% endfor %}
+         
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</div>
+<!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+{% endblock %}

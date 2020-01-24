@@ -1,0 +1,129 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Aspirantes</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="{% static 'css/sb-admin-2.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+
+  <div class="container">
+    <center>
+    <div class="card o-hidden border-0 shadow-lg my-5 col-lg-6 d-none d-lg-block bg-login">
+      <div class="card-body p-0">
+        <!-- Nested Row within Card Body -->
+        <div class="row">
+          <div class="col-lg-6 d-none d-lg-block bg-register"></div>
+          <div>
+            <div class="p-5">
+              <div class="text-center">
+                <h1 class="h4 text-gray-900 mb-4">Aspirantes</h1>
+              </div>
+              <form class="user" method="POST" action="/crear_usuario/">
+
+                {% csrf_token %}
+
+                <input style="display: none;" type="text" name="tipo" value="Aspirante" class="form-control form-control-user" placeholder="Nombre">
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="text" name="nombre" class="form-control form-control-user" placeholder="Nombre">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" name="apellidos"  class="form-control form-control-user" placeholder="Apellidos">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="text" name="edad" class="form-control form-control-user" placeholder="Edad">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" name="sexo" class="form-control form-control-user" placeholder="Sexo">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="text" name="preparatoria" class="form-control form-control-user" placeholder="Nombre de preparatoria">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" name="direccion" class="form-control form-control-user" placeholder="Dirección">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="text" name="promedio" class="form-control form-control-user" placeholder="Promedio actual">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" name="area" class="form-control form-control-user" placeholder="Área de conocimiento">
+                  </div>
+                </div>
+                
+                <div class="form-group row">
+                <div class="col-sm-6">
+                  <input type="email" name="correo" class="form-control form-control-user"  placeholder="Correo">
+                </div>
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="text" name="usuario" class="form-control form-control-user"  placeholder="Usuario">
+                  </div>
+                  </div>
+                  
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="password" name="password" class="form-control form-control-user" placeholder="Contraseña">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="password" class="form-control form-control-user"  placeholder="Contraseña">
+                  </div>
+                </div>
+               
+
+                <button class="btn btn-primary btn-user btn-block" href="#" type="submit">Crear cuenta</button>
+                
+              </form>
+              <hr>
+              <!-- <div class="text-center">
+                <a class="small" href="forgot-password.html">¿Olvidastes tu contraseña?</a>
+              </div>
+              <div class="text-center">
+                <a class="small" href="login.html">Ya tienes una cuenta? ¡inicia sesion!</a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> </center>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' 5}"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' static}"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="{% static 'js/sb-admin-2.min.js' %}"></script>
+
+</body>
+
+</html>

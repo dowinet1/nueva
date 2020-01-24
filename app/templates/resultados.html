@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}  
+
+ <!-- Begin Page Content -->
+ <div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">esta seccion mostrara para que carrera puede ser tu vocacion</h1>
+     
+     <!-- Content Row -->
+    <div class="row">
+      <div class="col-xl-8 col-lg-7">
+        <!-- Bar Chart -->
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">TEST - APTITUDES</h6>
+          </div>
+          <div class="card-body">
+            <div class="chart-bar">
+              <canvas id="myBarChart"></canvas>
+            </div>
+            <hr>
+            resultado del test- atitudes <code>las siguientes carreras</code>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!--listado de carreras en APTITUDES resultantes-->
+<div class="list-group">
+<a href="#" class="list-group-item list-group-item-action">carrera 1</a>
+<a href="#" class="list-group-item list-group-item-action">carrera 2</a>
+<a href="#" class="list-group-item list-group-item-action">carrera 3</a>
+</div>
+
+  <!-- Content Row -->
+    <div class="row">
+      <div class="col-xl-8 col-lg-7">
+        <!-- Bar Chart -->
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">TEST - INTERESES</h6>
+          </div>
+          <div class="card-body">
+            <div class="chart-bar">
+              <canvas id="myBarChart"></canvas>
+            </div>
+            <hr>
+            resultado del test- intereses <code>las siguientes carreras</code>
+          </div>
+        </div>
+
+      </div>
+
+  </div>
+  <!-- /.container-fluid -->
+<!--listado de carreras en INTERESES resultantes-->
+<div class="list-group">
+<a href="#" class="list-group-item list-group-item-action">carrera 1</a>
+<a href="#" class="list-group-item list-group-item-action">carrera 2</a>
+<a href="#" class="list-group-item list-group-item-action">carrera 3</a>
+</div>
+
+
+{% endblock %}
