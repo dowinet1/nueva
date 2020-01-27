@@ -29,9 +29,11 @@
   </div>
   <!--listado de carreras en APTITUDES resultantes-->
 <div class="list-group">
-<a href="#" class="list-group-item list-group-item-action">carrera 1</a>
-<a href="#" class="list-group-item list-group-item-action">carrera 2</a>
-<a href="#" class="list-group-item list-group-item-action">carrera 3</a>
+  {% for carrera in carreras_aptitud %}
+<a href="#" class="list-group-item list-group-item-action">{{carrera}}</a>
+{% endfor %}
+<!-- <a href="#" class="list-group-item list-group-item-action">carrera 2</a>
+<a href="#" class="list-group-item list-group-item-action">carrera 3</a> -->
 </div>
 
   <!-- Content Row -->
@@ -57,9 +59,9 @@
   <!-- /.container-fluid -->
 <!--listado de carreras en INTERESES resultantes-->
 <div class="list-group">
-<a href="#" class="list-group-item list-group-item-action">carrera 1</a>
-<a href="#" class="list-group-item list-group-item-action">carrera 2</a>
-<a href="#" class="list-group-item list-group-item-action">carrera 3</a>
+  {% for carrera in carreras_intereses %}
+  <a href="#" class="list-group-item list-group-item-action">{{carrera}}</a>
+  {% endfor %}
 </div>
 
 

@@ -13,3 +13,9 @@ class Usuario(admin.ModelAdmin):
 
 
 admin.site.register(Usuarios, Usuario)
+admin.site.register(Tabla_intereses)
+admin.site.register(Tabla_aptitud)
+# admin.site.register(Respuesta)
+# admin.site.register(Pregunta)
+# admin.site.register(Examen_intereses)
+# admin.site.register(Examen_aptitud)

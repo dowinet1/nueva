@@ -36,500 +36,497 @@ cada pregunta del cuestionario.
   <div class="container">
     <div class="form-panel">
       <div class="form">
-        <form class="cmxform form-horizontal style-form" id="signupForm" method="get" action="">
+        <form class="cmxform form-horizontal style-form" id="signupForm" method="POST" action="/respuesta_test_intereses/">
+          {% csrf_token %}
           <center><h4>SECCIÓN DE PREGUNTAS</h4></center>
           <h3>¿Qué tanto te gustaría?</h3>
-      <div id="ps">
-        
+          
+      <div id="ps"> 
         <h5>1.-¿Atender y cuidar enfermos ?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_uno" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_uno" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_uno" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_uno" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_uno" /><span>e) Me desagrado mucho o totalmente</span>
+      </div>
+
         <br>
-        <div id="ps">
+      <div id="ps">
         <h5>2.-¿Intervenir activamente en las discusiones de clase? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_dos" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_dos" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_dos" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_dos" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_dos" /><span>e) Me desagrado mucho o totalmente</span>
+      </div>
 
         <br>
         <div id="ps">
         <h5>3.-¿Escribir cuentos, crónicas o artículos? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_tres" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_tres" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2". name="pregunta_tres" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_tres" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_tres" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>4.-¿ Dibujar y pintar? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_cuatro" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_cuatro" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_cuatro" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_cuatro" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_cuatro" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>5.-¿Cantar en un coro estudiantil? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_cinco" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_cinco" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_cinco" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_cinco" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_cinco" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
-        <h5>6.-¿Llevar en orden tus libros y cuadernos?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <h5>6.-¿Llevar en orden tus libros y cuadernos? </h5>
+          <input type="radio" value="4" name="pregunta_seis" /><span>a) Me gusta mucho</span>
+          <input type="radio" value="3" name="pregunta_seis" /><span>b) Me gusta algo o en parte</span>
+          <input type="radio" value="2" name="pregunta_seis" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_seis" /><span>d) Me desagrada algo o en parte</span>
+          <input type="radio" value="0" name="pregunta_seis" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>7.-¿Conocer y estudiar la estructura de las plantas y de los animales? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_siete" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_siete" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_siete" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_siete" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_siete" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>8.-¿ Resolver cuestionarios de matemáticas? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_ocho" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_ocho" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_ocho" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_ocho" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_ocho" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>9.-¿ Armar y desarmar objetos mecánicos?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_nueve" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_nueve" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_nueve" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_nueve" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_nueve" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>10.-¿ Salir de excursión?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_diez" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_diez" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_diez" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_diez" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_diez" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>11.-¿ Proteger a los muchachos menores del grupo?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_once" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_once" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_once" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_once" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_once" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>12.-¿ Ser jefe de un grupo?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_doce" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_doce" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_doce" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_doce" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_doce" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>13.-¿ Leer obras literarias? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_trece" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_trece" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_trece" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_trece" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_trece" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>14.-¿ Moldear el barro, plastilina o cualquier otro material?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_catorce" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_catorce" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_catorce" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_catorce" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_catorce" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>15.-¿Escuchar música clásica?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_quince" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_quince" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_quince" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_quince" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_quince" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>16.-¿ Ordenar y clasificar los libros de una biblioteca?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_dseis" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_dseis" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_dseis" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_dseis" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_dseis" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>17.-¿ Hacer experimentos en un laboratorio?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_dsiete" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_dsiete" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_dsiete" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_dsiete" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_dsiete" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>18.-¿ Resolver problemas de aritmética?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_docho" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_docho" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_docho" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_docho" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_docho" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>19.-¿ Manejar herramientas y maquinaria?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_dnueve" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_dnueve" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_dnueve" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_dnueve" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_dnueve" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>20.-¿ Pertenecer a un grupo de exploradores?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_veinte" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_veinte" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_veinte" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_veinte" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_veinte" /><span>e) Me desagrado mucho o totalmente</veinte</div>
         <br>
         <div id="ps">
         <h5>21.-¿ Ser miembro de una sociedad de ayuda y asistencia?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div><br>
+        <input type="radio" value="4" name="pregunta_vuno" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_vuno" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_vuno" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_vuno" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_vuno" /><span>e) Me desagrado mucho o totalmente</span></div><br>
         <div id="ps">
         <h5>22.-¿ Dirigir la campaña política para un candidato estudiantil?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div><br>
+        <input type="radio" value="4" name="pregunta_vdos" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_vdos" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_vdos" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_vdos" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_vdos" /><span>e) Me desagrado mucho o totalmente</span></div><br>
         <div id="ps">
         <h5>23.-¿ Hacer versos para una publicación?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_vtres" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_vtres" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_vtres" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_vtres" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_vtres" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>24.-¿ Encargarte del decorado del lugar para un festival?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_vcuatro" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_vcuatro" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_vcuatro" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_vcuatro" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_vcuatro" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>25.-¿ Aprender a tocar un instrumento musical?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_vcinco" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_vcinco" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_vcinco" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_vcinco" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_vcinco" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>26.-¿ Aprender a escribir a máquina y en taquigrafía? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_vseis" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_vseis" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_vseis" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_vseis" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_vseis" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>27.-¿Investigar el origen de las costumbres de los pueblos?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_vsiete" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_vsiete" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_vsiete" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_vsiete" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_vsiete" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>28.-¿ Llevar las cuentas de una institución? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_vocho" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_vocho" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_vocho" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_vocho" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_vocho" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>29.-¿Construir objeto o muebles? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_vnueve" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_vnueve" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_vnueve" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_vnueve" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_vnueve" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>30.-¿ Trabajar al aire libre, fuera de la ciudad? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_treinta" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_treinta" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_treinta" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_treinta" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_treinta" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>31.-¿ Enseñar a leer a los analfabetos?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_tuno" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_tuno" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_tuno" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_tuno" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_tuno" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>32.-¿ Hacer propaganda para la difusión de una idea? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_tdos" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_tdos" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_tdos" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_tdos" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_tdos" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>33.-¿Representar un papel en una obra de teatro? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_ttres" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_ttres" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_ttres" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_ttres" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_ttres" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>34.-¿Idear y diseñar el escudo de un club o sociedad?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_tcuatro" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_tcuatro" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_tcuatro" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_tcuatro" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_tcuatro" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>35.-¿Ser miembro de una asociación musical? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_tcinco" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_tcinco" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_tcinco" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_tcinco" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_tcinco" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>36.-¿Ayudar a calificar pruebas? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_tseis" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_tseis" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_tseis" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_tseis" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_tseis" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>37.-¿Estudiar y entender las causas de los movimientos sociales? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_tsiete" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_tsiete" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_tsiete" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_tsiete" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_tsiete" /><span>e) Me desagrado mucho o totalmente</tocho</div>
         <br>
         <div id="ps">
         <h5>38.-¿ Explicar a otros cómo resolver problemas de matemáticas? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_tocho" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_tocho" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_tocho" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_tocho" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_tocho" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>39.-¿Reparar las instalaciones eléctricas, de gas o de plomería en tu casa? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_tnueve" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_tnueve" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_tnueve" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_tnueve" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_tnueve" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>40.-¿Sembrar y plantar en una granja durante las vacaciones? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="2" name="pregunta_cuarenta" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="3" name="pregunta_cuarenta" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="4" name="pregunta_cuarenta" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="1" name="pregunta_cuarenta" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_cuarenta" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>41.-¿Ayudar a tus compañeros en sus dificultades y preocupaciones?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_cuno" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_cuno" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_cuno" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_cuno" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_cuno" /><span>e) Me desagrado mucho o totalmente></span></div>
         <br>
         <div id="ps">
-        <h5> </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
-        <br>
-        <div id="ps">
+        
         <h5>42.-¿Leer biografías de políticos eminentes?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_cdos" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_cdos" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_cdos" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_cdos" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_cdos" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>43.-¿Participar en un concurso de oratoria? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_ctres" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_ctres" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_ctres" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_ctres" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_ctres" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>44.-¿Diseñar el vestuario para una función teatral? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_ccuatro" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_ccuatro" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_ccuatro" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_ccuatro" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_ccuatro" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>45.-¿Leer biografías de músicos eminentes </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_ccinco" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_ccinco" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_ccinco" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_ccinco" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_ccinco" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>46.-¿Encargarte del archivo y los documentos de una sociedad? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_cseis" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_cseis" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_cseis" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_cseis" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_cseis" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>47.-¿Leer revistas y libros científicos?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_csiete" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_csiete" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_csiete" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_csiete" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_csiete" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>48.-¿Participar en concursos de matemáticas? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_cocho" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_cocho" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_cocho" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_cocho" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_cocho" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>49.-¿Proyectar y dirigir alguna construcción? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_cnueve" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_cnueve" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_cnueve" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_cnueve" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_cnueve" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>50.-¿Atender animales en un rancho durante las vacaciones? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_cincuenta" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_cincuenta" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_cincuenta" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_cincuenta" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_cincuenta" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <h3>¿Qué tanto te gustaría trabajar como?</h3>
         <div id="ps">
         <h5>51.-¿	Funcionario al servicio de las clases humildes?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_suno" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_suno" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_suno" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_suno" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_suno" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>52.-¿	Experto en relaciones sociales de una gran empresa? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_sdos" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_sdos" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_sdos" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_sdos" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_sdos" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>53.-¿	Escritor en un periódico o empresa editorial?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_stres" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_stres" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_stres" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_stres" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_stres" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>54.-¿	Dibujante profesional en una empresa?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_scuatro" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_scuatro" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_scuatro" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_scuatro" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_scuatro" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>55.-¿	Concertista en una sinfónica?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_scinco" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_scinco" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_scinco" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_scinco" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_scinco" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>56.-¿	Técnico organizador de oficinas?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_sseis" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_sseis" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_sseis" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_sseis" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_sseis" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>57.-¿	Investigar en un laboratorio?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_ssiete" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_ssiete" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_ssiete" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_ssiete" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_ssiete" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>58.-¿	Experto calculista en una institución?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_socho" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_socho" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_socho" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_socho" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_socho" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>59.-¿	Perito mecánico en un taller?</h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+        <input type="radio" value="4" name="pregunta_snueve" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_snueve" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_snueve" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_snueve" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_snueve" /><span>e) Me desagrado mucho o totalmente</span></div>
         <br>
         <div id="ps">
         <h5>60.-¿	Técnico cuyas actividades se desempeñan fuera de la ciudad? </h5>
-        <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-        <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-        <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-        <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-        <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div><br>
+        <input type="radio" value="4" name="pregunta_sesenta" /><span>a) Me gusta mucho</span>
+        <input type="radio" value="3" name="pregunta_sesenta" /><span>b) Me gusta algo o en parte</span>
+        <input type="radio" value="2" name="pregunta_sesenta" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
+        <input type="radio" value="1" name="pregunta_sesenta" /><span>d) Me desagrada algo o en parte</span>
+        <input type="radio" value="0" name="pregunta_sesenta" /><span>e) Me desagrado mucho o totalmente</span></div><br>
 
-       <a href="charts.html"> <button  type="button" class="btn btn-success">Resultado</button></a>
-       <a href="intereses.html"> <button  type="button" class="btn btn-danger">Borrar</button></a>
+       <button type="submit" class="btn btn-success">Resultado</button>
+       <button type="reset" class="btn btn-danger">Borrar</button>
 
       </form>
     </div>

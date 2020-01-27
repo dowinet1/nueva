@@ -20,5 +20,8 @@ urlpatterns = [
     path('send_reset_pass/', views.send_reset_pass),
     re_path('restablecerpass/(?P<usuario>[\w.@+-]+)/', views.restablecerpass),
     path('new_pass/', views.new_pass),
+
+    path('respuesta_test_intereses/', views.respuesta_test_intereses),
+    path('respuesta_test_aptitud/', views.respuesta_test_aptitud),
     
 ]

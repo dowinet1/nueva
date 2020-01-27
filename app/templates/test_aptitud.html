@@ -29,499 +29,491 @@
     <div class="container">
       <div class="form-panel">
         <div class="form">
-          <form class="cmxform form-horizontal style-form" id="signupForm" method="get" action="">
+          <form class="cmxform form-horizontal style-form" id="signupForm" method="POST" action="/respuesta_test_aptitud/">
+            {% csrf_token %}
             <center><h4>SECCIÓN DE PREGUNTAS</h4></center>
             <h3>¿Qué tan apto te consideras para…?</h3>
         
           <div id="ps">
           <h5>1.-¿Tratar y hablar con sensibilidad a las personas. ?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_uno" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_uno" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_uno" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_uno" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_uno" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>2.-¿Ser jefe competente de un grupo, equipo o sociedad. ? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_dos" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_dos" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_dos" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_dos" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_dos" /><span>e) Considero ser incompetente</span></div>
   
           <br>
           <div id="ps">
           <h5>3.-¿Expresarte con facilidad en clase o al platicar con tus amigos.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_tres" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_tres" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_tres" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_tres" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_tres" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>4.-¿Dibujar casar, objetos, figuras humanas, etcétera.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_cuatro" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_cuatro" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_cuatro" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_cuatro" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_cuatro" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>5.-¿Cantar en un grupo. ? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_cinco" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_cinco" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_cinco" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_cinco" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_cinco" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>6.-¿Llevar en forma correcta y ordenada los apuntes de clase. ?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_seis" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_seis" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_seis" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_seis" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_seis" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>7.-¿Entender principios y experimentos de biología. ? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_siete" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_siete" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_siete" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_siete" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_siete" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>8.-Ejecutar con rapidez y exactitud operaciones aritméticas.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_ocho" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_ocho" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_ocho" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_ocho" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_ocho" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>9.-¿Armar y componer objetos mecánicos como chapas, timbres, etcétera ?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_nueve" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_nueve" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_nueve" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_nueve" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_nueve" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>10.-¿Actividades que requieren destreza manual.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_diez" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_diez" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_diez" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_diez" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_diez" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>11.-¿Ser miembro activo y útil en un club o sociedad.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_once" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_once" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_once" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_once" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_once" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>12.-¿Organizar y dirigir festivales, encuentros deportivos, excursiones o campañas sociales.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_doce" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_doce" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_doce" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_doce" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_doce" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>13.-¿Redactar composiciones o artículos periodísticos.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_trece" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_trece" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_trece" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_trece" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_trece" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>14.-¿Pintar paisajes.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_catorce" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_catorce" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_catorce" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_catorce" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_catorce" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>15.-¿Tocar un instrumento musical.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_quince" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_quince" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_quince" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_quince" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_quince" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>16.-¿Ordenar y clasificar debidamente documentos en una oficina.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_dseis" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_dseis" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_dseis" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_dseis" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_dseis" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>17.-¿ Entender principios y experimentos de física.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_dsiete" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_dsiete" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_dsiete" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_dsiete" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_dsiete" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>18.-¿Resolver problemas de aritmética.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_docho" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_docho" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_docho" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_docho" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_docho" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>19.-¿Desarmar, armar y componer objetos complicados.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_dnueve" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_dnueve" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_dnueve" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_dnueve" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_dnueve" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>20.-¿Manejar con habilidad herramienta de carpintería.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_veinte" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_veinte" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_veinte" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_veinte" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_veinte" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>21.-¿Colaborar con otros para el bien de la comunidad?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div><br>
+          <input type="radio" value="4" name="pregunta_vuno" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_vuno" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_vuno" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_vuno" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_vuno" /><span>e) Considero ser incompetente</span></div><br>
           <div id="ps">
           <h5>22.-¿Convencer a otros para que hagan lo que crees que deben hacer.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div><br>
+          <input type="radio" value="4" name="pregunta_vdos" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_vdos" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_vdos" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_vdos" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_vdos" /><span>e) Considero ser incompetente</span></div><br>
           <div id="ps">
           <h5>23.-¿Componer versos serios o jocosos.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_vtres" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_vtres" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_vtres" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_vtres" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_vtres" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>24.-¿Decorar artísticamente un salón, corredor, escenario o patio para un festival.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_vcuatro" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_vcuatro" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_vcuatro" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_vcuatro" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_vcuatro" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>25.-¿Distinguir cuando alguien desentona en las canciones o piezas musicales.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_vcinco" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_vcinco" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_vcinco" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_vcinco" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_vcinco" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>26.-¿Contestar y redactar correctamente oficios y cartas.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_vseis" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_vseis" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_vseis" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_vseis" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_vseis" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>27.-¿Entender principios y experimentos de química.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_vsiete" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_vsiete" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_vsiete" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_vsiete" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_vsiete" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>28.-¿ Resolver rompecabezas numéricos.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_vocho" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_vocho" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_vocho" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_vocho" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_vocho" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>29.-¿Resolver rompecabezas de alambre o de madera.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_vnueve" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_vnueve" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_vnueve" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_vnueve" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_vnueve" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>30.-¿Manejar con facilidad herramientas mecánicas como pinzas, llaves de tuercas, desarmador, etcétera.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_treinta" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_treinta" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_treinta" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_treinta" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_treinta" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>31.-¿Saber escuchar a otros con paciencia y comprender su punto de vista.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_tuno" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_tuno" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_tuno" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_tuno" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_tuno" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>32.-¿Dar órdenes a otros con seguridad y naturalidad.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_tdos" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_tdos" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_tdos" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_tdos" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_tdos" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>33.-¿Escribir cuentos, narraciones o historietas.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_ttres" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_ttres" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_ttres" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_ttres" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_ttres" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>34.-¿Modelar con barro, plastilina o grabar madera.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_tcuatro" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_tcuatro" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_tcuatro" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_tcuatro" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_tcuatro" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>35.-¿Entonar correctamente las canciones de moda.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_tcinco" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_tcinco" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_tcinco" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_tcinco" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_tcinco" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>36.-¿Anotar y manejar con exactitud y rapidez nombres, números y otros datos.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_tseis" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_tseis" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_tseis" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_tseis" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_tseis" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>37.-¿Entender principios y hechos económicos y sociales.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_tsiete" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_tsiete" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_tsiete" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_tsiete" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_tsiete" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>38.-¿Resolver problemas de álgebra.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_tocho" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_tocho" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_tocho" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_tocho" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_tocho" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>39.-¿Armar y componer muebles.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
-          <br>
+          <input type="radio" value="4" name="pregunta_tnueve" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_tnueve" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_tnueve" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_tnueve" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_tnueve" /><span>e) Considero ser incompetente</span></div>
           <div id="ps">
           <h5>40.-¿Manejar con habilidad pequeñas piezas y herramientas como agujas, manecillas, joyas, piezas de relojería, etcétera.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_cuarenta" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_cuarenta" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_cuarenta" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_cuarenta" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_cuarenta" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>41.-¿Conversar en las reuniones y fiestas con acierto y naturalidad?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_cuno" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_cuno" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_cuno" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_cuno" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_cuno" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
-          <h5>42.-¿Dirigir un grupo o equipo en situaciones difíciles o peligrosas?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+            <h5>42.-¿Dirigir un grupo o equipo en situaciones difíciles o peligrosas?</h5>
+            <input type="radio" value="4" name="pregunta_cdos" /><span>a) Considero ser muy competente</span>
+            <input type="radio" value="3" name="pregunta_cdos" /><span>b) Considero ser competente</span>
+            <input type="radio" value="3" name="pregunta_cdos" /><span>c) Considero ser medianamente competente</span><br/><br/>
+            <input type="radio" value="1" name="pregunta_cdos" /><span>d) Considero ser muy poco competente</span>
+            <input type="radio" value="0" name="pregunta_cdos" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
-          <h5>42.-¿Distinguir y apreciar la buena literatura.?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <h5>43.-¿Distinguir y apreciar la buena literatura.?</h5>
+          <input type="radio" value="4" name="pregunta_ctres" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_ctres" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_ctres" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_ctres" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_ctres" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
-          <h5>43.-¿Distinguir y apreciar la buena pintura.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <h5>44.-¿Distinguir y apreciar la buena pintura.? </h5>
+          <input type="radio" value="4" name="pregunta_ccuatro" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_ccuatro" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_ccuatro" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_ccuatro" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_ccuatro" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
-          <h5>44.-¿Distinguir y apreciar la buena música.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <h5>45.-¿Distinguir y apreciar la buena música.? </h5>
+          <input type="radio" value="4" name="pregunta_ccinco" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_ccinco" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_ccinco" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_ccinco" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_ccinco" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
-          <h5>45.-¿Encargarse de recibir, anotar y dar recados sin olvidar detalles importantes.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <h5>46.-¿Encargarse de recibir, anotar y dar recados sin olvidar detalles importantes.? </h5>
+          <input type="radio" value="4" name="pregunta_cseis" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_cseis" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_cseis" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_cseis" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_cseis" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
-          <h5>46.-¿Entender las causas que determinan los acontecimientos históricos.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <h5>47.-¿Entender las causas que determinan los acontecimientos históricos.? </h5>
+          <input type="radio" value="4" name="pregunta_csiete" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_csiete" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_csiete" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_csiete" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_csiete" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
-          <h5>47.-¿Resolver problemas de geometría?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <h5>48.-¿Resolver problemas de geometría?</h5>
+          <input type="radio" value="4" name="pregunta_cocho" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_cocho" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_cocho" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_cocho" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_cocho" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
-          <h5>48.-¿Aprender el funcionamiento de ciertos mecanismos complicados como motores, relojes, bombas, etcétera.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <h5>49.-¿Aprender el funcionamiento de ciertos mecanismos complicados como motores, relojes, bombas, etcétera.? </h5>
+          <input type="radio" value="4" name="pregunta_cnueve" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_cnueve" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_cnueve" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_cnueve" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_cnueve" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
-          <h5>49.-¿Hacer con facilidad trazos geométricos con la ayudad de las escuadras, la regla “T” y compás.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <h5>50.-¿Hacer con facilidad trazos geométricos con la ayudad de las escuadras, la regla “T” y compás.? </h5>
+          <input type="radio" value="4" name="pregunta_cincuenta" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_cincuenta" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_cincuenta" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_cincuenta" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_cincuenta" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
-          <h5>50.-¿Actuar con desinterés? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <h5>51.-¿Actuar con desinterés? </h5>
+          <input type="radio" value="4" name="pregunta_suno" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_suno" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_suno" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_suno" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_suno" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
-          <h5>51.-¿Corregir a los demás sin ofenderlos?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <h5>52.-¿Corregir a los demás sin ofenderlos?</h5>
+          <input type="radio" value="4" name="pregunta_sdos" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_sdos" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_sdos" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_sdos" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_sdos" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
-          <h5>52.-¿Exponer juicios públicamente sin preocupación por la crítica.? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
-          <br>
-          <div id="ps">
-          <h5>53.-¿Exponer juicios públicamente sin preocupación por la crítica?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <h5>53.-¿Exponer juicios públicamente sin preocupación por la crítica.? </h5>
+          <input type="radio" value="4" name="pregunta_stres" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_stres" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_stres" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_stres" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_stres" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>54.-¿Colaborar en la elaboración de un libro sobre el arte en la Arquitectura?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_scuatro" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_scuatro" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_scuatro" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_scuatro" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_scuatro" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
-          <h5>55.-¿Dirigir un grupo musical?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <h5>55.-Dirigir un grupo musical</h5>
+          <input type="radio" value="4" name="pregunta_scinco" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_scinco" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_scinco" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_scinco" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_scinco" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>56.-¿Colaborar en el desarrollo de métodos más eficientes de trabajo?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <input type="radio" value="4" name="pregunta_sseis" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_sseis" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_sseis" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_sseis" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_sseis" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
-          <h5>57.-¿Realizar investigaciones científicas teniendo como finalidad la búsqueda de la verdad?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <h5>57.- ¿Realizar investigaciones científicas teniendo como finalidad la búsqueda de la verdad?</h5>
+          <input type="radio" value="4" name="pregunta_ssiete" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_ssiete" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_ssiete" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_ssiete" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_ssiete" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
-          <h5>58.-¿Enseñar a resolver problemas de matemáticas?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <h5>58.- ¿Enseñar a resolver problemas de matemáticas?</h5>
+          <input type="radio" value="4" name="pregunta_socho" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_socho" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_socho" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_socho" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_socho" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
-          <h5>59.-¿Inducir a las personas a obtener resultados prácticos?</h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div>
+          <h5>59.- ¿Inducir a las personas a obtener resultados prácticos?</h5>
+          <input type="radio" value="4" name="pregunta_snueve" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_snueve" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_snueve" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_snueve" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_snueve" /><span>e) Considero ser incompetente</span></div>
           <br>
           <div id="ps">
           <h5>60.-¿Participar en un concurso de modelismo de coches, aviones, barcos, etcétera? </h5>
-          <input type="radio" value="a" name="793" /><span>a) Me gusta mucho</span>
-          <input type="radio" value="b" name="793" /><span>b) Me gusta algo o en parte</span>
-          <input type="radio" value="c" name="793" /><span>c) Me es indiferente, pues ni me gusta, ni me disgusta</span><br/><br/>
-          <input type="radio" value="d" name="793" /><span>d) Me desagrada algo o en parte</span>
-          <input type="radio" value="d" name="793" /><span>e) Me desagrado mucho o totalmente</span></div><br>
+          <input type="radio" value="4" name="pregunta_sesenta" /><span>a) Considero ser muy competente</span>
+          <input type="radio" value="3" name="pregunta_sesenta" /><span>b) Considero ser competente</span>
+          <input type="radio" value="3" name="pregunta_sesenta" /><span>c) Considero ser medianamente competente</span><br/><br/>
+          <input type="radio" value="1" name="pregunta_sesenta" /><span>d) Considero ser muy poco competente</span>
+          <input type="radio" value="0" name="pregunta_sesenta" /><span>e) Considero ser incompetente</span></div><br>
   
-          <a href="charts.html"> <button  type="button" class="btn btn-success">Resultado</button></a>
-          <a href="aptitudes.html"> <button  type="button" class="btn btn-danger">Borrar</button></a>
+          <button  type="submit" class="btn btn-success">Resultado</button>
+           <button  type="reset" class="btn btn-danger">Borrar</button>
   
         
         </form>

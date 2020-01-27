@@ -21,6 +21,7 @@ from django.urls import path
 
 urlpatterns = [
     path('grappelli/', include('grappelli.urls')), # grappelli URLS
+    #path('jet/', include('jet.urls', 'jet')),  # Django JET URLS
     path('admin/', admin.site.urls),
     path('', include('app.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
